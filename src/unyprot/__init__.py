@@ -11,3 +11,8 @@ def create_uniprot_collection_from_xml_file(xml_file):
 def create_uniprot_collection_from_xml_string(xml_string):
     new_coll = EntrySet(streamXML=io.StringIO(xml_string))
     return new_coll
+
+
+def create_uniprot_collection_from_xml_stream(xml_stream):
+    new_coll = EntrySet(streamXML=io.StringIO(xml_stream))
+    return new_coll
